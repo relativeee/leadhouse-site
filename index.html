@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeadHouse — Gestão Imobiliária Inteligente</title>
+  <meta name="description" content="CRM imobiliário com IA que qualifica leads via WhatsApp, agenda visitas e fecha negócios para corretores autônomos." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg class="nav-logo-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        LeadHouse
+      </a>
+      <div class="nav-right">
+        <a href="#funcionalidades" class="nav-link">Produto</a>
+        <a href="#depoimentos" class="nav-link">Depoimentos</a>
+        <a href="#planos" class="nav-link">Planos</a>
+        <a href="https://leadhouse.vercel.app/login" class="nav-link">Entrar</a>
+        <a href="https://leadhouse.vercel.app/login" class="nav-btn">Começar grátis</a>
+      </div>
+      <button class="nav-mobile" id="navMobile" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav-mobile-menu" id="mobileMenu">
+      <a href="#funcionalidades" onclick="closeMobile()">Produto</a>
+      <a href="#depoimentos" onclick="closeMobile()">Depoimentos</a>
+      <a href="#planos" onclick="closeMobile()">Planos</a>
+      <a href="https://leadhouse.vercel.app/login" onclick="closeMobile()">Entrar</a>
+      <a href="https://leadhouse.vercel.app/login" class="nav-btn" onclick="closeMobile()">Começar grátis</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-chip anim" data-delay="0">
+        <span class="hero-chip__dot"></span>
+        Para corretores autônomos
+      </div>
+      <h1 class="hero-title anim" data-delay="80">
+        O CRM que transforma<br>conversas em <em>vendas.</em>
+      </h1>
+      <p class="hero-desc anim" data-delay="160">
+        Qualifique leads via WhatsApp com IA, organize seu pipeline imobiliário e nunca mais perca um cliente por falta de acompanhamento.
+      </p>
+      <div class="hero-ctas anim" data-delay="240">
+        <a href="https://leadhouse.vercel.app/login" class="btn btn--gold">Testar grátis 14 dias</a>
+        <a href="#funcionalidades" class="btn btn--outline">Como funciona</a>
+      </div>
+      <div class="hero-metrics anim" data-delay="320">
+        <div class="hero-metric">
+          <span class="hero-metric__num">3×</span>
+          <span class="hero-metric__label">mais respostas</span>
+        </div>
+        <div class="hero-metric-sep"></div>
+        <div class="hero-metric">
+          <span class="hero-metric__num">68%</span>
+          <span class="hero-metric__label">menos tempo qualificando</span>
+        </div>
+        <div class="hero-metric-sep"></div>
+        <div class="hero-metric">
+          <span class="hero-metric__num">+230</span>
+          <span class="hero-metric__label">corretores ativos</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll anim" data-delay="500">
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="1" width="14" height="22" rx="7"/><line x1="8" y1="6" x2="8" y2="10"/></svg>
+    </div>
+  </header>
+
+  <!-- LOGO BAR -->
+  <section class="logo-bar">
+    <div class="container">
+      <p class="logo-bar__text">Integrações nativas</p>
+      <div class="logo-bar__logos">
+        <span>WhatsApp Business</span>
+        <span>Google Sheets</span>
+        <span>Claude AI</span>
+        <span>Supabase</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="funcionalidades" class="features-section">
+    <div class="container">
+      <div class="section-head anim">
+        <p class="section-kicker">Produto</p>
+        <h2 class="section-title">Menos planilha.<br>Mais fechamento.</h2>
+        <p class="section-desc">Cada funcionalidade foi pensada para resolver um problema real do corretor.</p>
+      </div>
+
+      <div class="features-bento">
+        <div class="bento-card bento-card--wide anim">
+          <div class="bento-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3 class="bento-card__title">Qualificação via WhatsApp</h3>
+          <p class="bento-card__desc">Lead manda mensagem, a IA responde, qualifica e classifica automaticamente no pipeline. Você só agenda a visita.</p>
+          <div class="bento-card__visual">
+            <div class="bento-chat">
+              <div class="bento-chat__msg bento-chat__msg--in">Oi, vi o apartamento de 3 quartos em Manaíra. Ainda tá disponível?</div>
+              <div class="bento-chat__msg bento-chat__msg--out">Olá! Sim, está disponível. Aceita financiamento? Qual sua faixa de valor?</div>
+              <div class="bento-chat__msg bento-chat__msg--in">Financiamento, até 500 mil</div>
+              <div class="bento-chat__status">Lead classificado: <strong>Quente</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bento-card anim">
+          <div class="bento-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3 class="bento-card__title">Pipeline visual</h3>
+          <p class="bento-card__desc">Veja todos seus leads organizados por temperatura. Saiba quem ligar, quem nutrir e quem acompanhar.</p>
+        </div>
+
+        <div class="bento-card anim">
+          <div class="bento-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3 class="bento-card__title">Agenda de visitas</h3>
+          <p class="bento-card__desc">Agende, confirme e acompanhe visitas. Sem trocar de app, sem esquecer compromisso.</p>
+        </div>
+
+        <div class="bento-card anim">
+          <div class="bento-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="bento-card__title">Catálogo de imóveis</h3>
+          <p class="bento-card__desc">Cadastre seu portfólio com fotos e detalhes. Vincule ao lead certo na hora certa.</p>
+        </div>
+
+        <div class="bento-card anim">
+          <div class="bento-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3 class="bento-card__title">Agente IA 24h</h3>
+          <p class="bento-card__desc">Seu assistente responde leads fora do horário, coleta dados e alimenta o pipeline enquanto você dorme.</p>
+        </div>
+
+        <div class="bento-card anim">
+          <div class="bento-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="bento-card__title">Dashboard analítico</h3>
+          <p class="bento-card__desc">Métricas claras: leads captados, visitas agendadas, taxa de conversão — tudo em tempo real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section">
+    <div class="container">
+      <div class="section-head anim" style="text-align:center;">
+        <p class="section-kicker">Como funciona</p>
+        <h2 class="section-title">3 passos para vender mais</h2>
+      </div>
+      <div class="steps">
+        <div class="step anim">
+          <div class="step__num">01</div>
+          <h3 class="step__title">Conecte seu WhatsApp</h3>
+          <p class="step__desc">Vincule seu número Business em menos de 10 minutos. Sem código, sem complicação.</p>
+        </div>
+        <div class="step-arrow anim">
+          <svg width="32" height="16" viewBox="0 0 32 16" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="0" y1="8" x2="28" y2="8"/><polyline points="22 2 28 8 22 14"/></svg>
+        </div>
+        <div class="step anim">
+          <div class="step__num">02</div>
+          <h3 class="step__title">A IA qualifica seus leads</h3>
+          <p class="step__desc">Cada mensagem é analisada. O lead entra no pipeline já classificado por temperatura e intenção.</p>
+        </div>
+        <div class="step-arrow anim">
+          <svg width="32" height="16" viewBox="0 0 32 16" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="0" y1="8" x2="28" y2="8"/><polyline points="22 2 28 8 22 14"/></svg>
+        </div>
+        <div class="step anim">
+          <div class="step__num">03</div>
+          <h3 class="step__title">Você fecha o negócio</h3>
+          <p class="step__desc">Agende visitas, acompanhe o funil e foque no que importa: converter leads em clientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="depoimentos" class="testimonials-section">
+    <div class="container">
+      <div class="section-head anim" style="text-align:center;">
+        <p class="section-kicker">Depoimentos</p>
+        <h2 class="section-title">Quem usa, recomenda</h2>
+      </div>
+      <div class="testimonials-row">
+        <div class="testi-card anim">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"Fechei 2 vendas no primeiro mês. Antes eu perdia lead todo dia por falta de organização. Hoje sei exatamente quem ligar primeiro."</p>
+          <div class="testi-card__author">
+            <div class="testi-avatar">RC</div>
+            <div><strong>Rafael Cardoso</strong><br><span>Corretor · São Paulo, SP</span></div>
+          </div>
+        </div>
+        <div class="testi-card anim">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"O agente de IA respondendo às 23h foi game changer. Chego de manhã com visitas pré-agendadas. Não trabalho mais sem isso."</p>
+          <div class="testi-card__author">
+            <div class="testi-avatar">FM</div>
+            <div><strong>Fernanda Mota</strong><br><span>Corretora · Curitiba, PR</span></div>
+          </div>
+        </div>
+        <div class="testi-card anim">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text">"Simples e direto. O pipeline é o que eu sempre quis: vejo tudo numa tela e sei o que fazer. Triplicou minha produtividade."</p>
+          <div class="testi-card__author">
+            <div class="testi-avatar">JB</div>
+            <div><strong>Jonas Bittencourt</strong><br><span>Corretor · Recife, PE</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="planos" class="pricing-section">
+    <div class="container">
+      <div class="section-head anim" style="text-align:center;">
+        <p class="section-kicker">Planos</p>
+        <h2 class="section-title">Simples. Sem surpresa.</h2>
+        <p class="section-desc" style="margin:0 auto;">Cancele quando quiser. Sem fidelidade.</p>
+      </div>
+      <div class="pricing-row">
+        <div class="price-card anim">
+          <p class="price-card__plan">Básico</p>
+          <div class="price-card__price">R$97<span>/mês</span></div>
+          <p class="price-card__desc">Para quem quer sair das planilhas e organizar o negócio.</p>
+          <ul class="price-card__list">
+            <li>Até 200 leads</li>
+            <li>Pipeline visual</li>
+            <li>Catálogo (até 30 imóveis)</li>
+            <li>Agenda de visitas</li>
+            <li>Suporte por e-mail</li>
+          </ul>
+          <a href="https://leadhouse.vercel.app/login" class="btn btn--outline btn--full">Começar grátis</a>
+        </div>
+        <div class="price-card price-card--featured anim">
+          <div class="price-card__badge">Mais popular</div>
+          <p class="price-card__plan">Pro</p>
+          <div class="price-card__price">R$197<span>/mês</span></div>
+          <p class="price-card__desc">Para quem quer automatizar e nunca mais perder lead.</p>
+          <ul class="price-card__list">
+            <li>Leads ilimitados</li>
+            <li>Tudo do Básico</li>
+            <li>WhatsApp + IA 24h</li>
+            <li>Catálogo ilimitado</li>
+            <li>Suporte prioritário</li>
+          </ul>
+          <a href="https://leadhouse.vercel.app/login" class="btn btn--gold btn--full">Testar grátis 14 dias</a>
+        </div>
+      </div>
+      <p class="pricing-note">Sem cartão de crédito para o trial.</p>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title anim">Seu próximo cliente já está<br>esperando resposta.</h2>
+      <p class="section-desc anim" style="margin:0 auto 2rem;">Cada hora sem sistema é lead esquecido. Comece agora — é grátis por 14 dias.</p>
+      <a href="https://leadhouse.vercel.app/login" class="btn btn--gold btn--lg anim">Criar minha conta grátis</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>LeadHouse</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Termos</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Contato</a>
+      </div>
+      <p class="footer-copy">© 2026 LeadHouse. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.anim').forEach(el => obs.observe(el));
+
+    // Nav scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('nav--scrolled', window.scrollY > 40);
+    });
+
+    // Mobile menu
+    document.getElementById('navMobile').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+      document.getElementById('navMobile').classList.toggle('active');
+    });
+    function closeMobile() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('navMobile').classList.remove('active');
+    }
+  </script>
+</body>
+</html>
