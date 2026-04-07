@@ -66,16 +66,20 @@ module.exports = async (req, res) => {
     const host  = req.headers['x-forwarded-host'] || req.headers.host;
     const baseUrl = process.env.SITE_URL || `${proto}://${host}`;
 
+    // E-mail opcional via query (?email=usuario@x.com) — se vier do dashboard
+    const emailParam = req.query?.email || (req.url ? new URL(req.url, 'http://x').searchParams.get('email') : null);
+
     const session = await stripe.checkout.sessions.create({
       mode: 'subscription',
       payment_method_types: ['card'],
       line_items: [{ price: priceId, quantity: 1 }],
-      subscription_data: TRIAL_DAYS[plan] > 0 ? { trial_period_days: TRIAL_DAYS[plan] } : undefined,
+      subscription_data: TRIAL_DAYS[plan] > 0 ? { trial_period_days: TRIAL_DAYS[plan], metadata: { plan } } : { metadata: { plan } },
       success_url: `${baseUrl}/sucesso.html?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url:  `${baseUrl}/cancelado.html`,
       allow_promotion_codes: true,
       billing_address_collection: 'auto',
       locale: 'pt-BR',
+      customer_email: emailParam || undefined,
       metadata: { plan },
     });
 
