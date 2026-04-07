@@ -32,7 +32,14 @@ const TRIAL_DAYS = {
 
 module.exports = async (req, res) => {
   try {
-    const plan = (req.query.plan || '').toLowerCase();
+    // Le o plan tanto via req.query quanto parseando a URL (fallback)
+    let plan = '';
+    if (req.query && req.query.plan) {
+      plan = String(req.query.plan).toLowerCase();
+    } else if (req.url) {
+      const u = new URL(req.url, 'http://localhost');
+      plan = (u.searchParams.get('plan') || '').toLowerCase();
+    }
 
     if (!plan || !PRICE_MAP[plan]) {
       return res.status(400).json({
