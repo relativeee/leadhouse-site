@@ -241,9 +241,10 @@
         <h2 class="section-title">Simples. Sem surpresa.</h2>
         <p class="section-desc" style="margin:0 auto;">Cancele quando quiser. Sem fidelidade.</p>
       </div>
-      <div class="pricing-row">
+      <div class="pricing-row pricing-row--3">
+        <!-- Start -->
         <div class="price-card anim">
-          <p class="price-card__plan">Básico</p>
+          <p class="price-card__plan">Start</p>
           <div class="price-card__price">R$97<span>/mês</span></div>
           <p class="price-card__desc">Para quem quer sair das planilhas e organizar o negócio.</p>
           <ul class="price-card__list">
@@ -253,8 +254,10 @@
             <li>Agenda de visitas</li>
             <li>Suporte por e-mail</li>
           </ul>
-          <a href="https://leadhouse.vercel.app/login" class="btn btn--outline btn--full">Começar grátis</a>
+          <a href="/api/checkout?plan=start" class="btn btn--outline btn--full">Assinar Start</a>
         </div>
+
+        <!-- Pro -->
         <div class="price-card price-card--featured anim">
           <div class="price-card__badge">Mais popular</div>
           <p class="price-card__plan">Pro</p>
@@ -262,15 +265,30 @@
           <p class="price-card__desc">Para quem quer automatizar e nunca mais perder lead.</p>
           <ul class="price-card__list">
             <li>Leads ilimitados</li>
-            <li>Tudo do Básico</li>
+            <li>Tudo do Start</li>
             <li>WhatsApp + IA 24h</li>
             <li>Catálogo ilimitado</li>
             <li>Suporte prioritário</li>
           </ul>
-          <a href="https://leadhouse.vercel.app/login" class="btn btn--gold btn--full">Testar grátis 14 dias</a>
+          <a href="/api/checkout?plan=pro" class="btn btn--gold btn--full">Testar 14 dias grátis</a>
+        </div>
+
+        <!-- Elite -->
+        <div class="price-card anim">
+          <p class="price-card__plan">Elite</p>
+          <div class="price-card__price">R$397<span>/mês</span></div>
+          <p class="price-card__desc">Para imobiliárias e equipes que querem escalar com IA.</p>
+          <ul class="price-card__list">
+            <li>Tudo do Pro</li>
+            <li>Múltiplos corretores</li>
+            <li>API e integrações</li>
+            <li>Onboarding dedicado</li>
+            <li>Gerente de conta</li>
+          </ul>
+          <a href="/api/checkout?plan=elite" class="btn btn--outline btn--full">Assinar Elite</a>
         </div>
       </div>
-      <p class="pricing-note">Sem cartão de crédito para o trial.</p>
+      <p class="pricing-note">Pagamento seguro via Stripe · Cancele quando quiser</p>
     </div>
   </section>
 

@@ -1,0 +1,9 @@
+{
+  "name": "leadhouse-site",
+  "version": "1.0.0",
+  "description": "Landing page LeadHouse com checkout Stripe",
+  "private": true,
+  "dependencies": {
+    "stripe": "^17.0.0"
+  }
+}

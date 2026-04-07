@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento confirmado · LeadHouse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .status { text-align: center; max-width: 480px; padding: 2rem; }
+    .status__icon {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.3);
+      color: #C9A84C;
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .status__title {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px; font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .status__desc {
+      color: #9A9488; font-size: 15px;
+      line-height: 1.6; margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="status">
+    <div class="status__icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    </div>
+    <h1 class="status__title">Pagamento confirmado</h1>
+    <p class="status__desc">Sua assinatura foi ativada com sucesso. Acesse sua conta para começar a usar o LeadHouse agora mesmo.</p>
+    <a href="https://leadhouse.vercel.app/login" class="btn btn--gold">Acessar minha conta</a>
+  </div>
+</body>
+</html>

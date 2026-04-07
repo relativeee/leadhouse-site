@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento cancelado · LeadHouse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .status { text-align: center; max-width: 480px; padding: 2rem; }
+    .status__icon {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #9A9488;
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .status__title {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px; font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .status__desc {
+      color: #9A9488; font-size: 15px;
+      line-height: 1.6; margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="status">
+    <div class="status__icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+    </div>
+    <h1 class="status__title">Pagamento cancelado</h1>
+    <p class="status__desc">Você cancelou o checkout. Sem cobrança feita. Quando quiser, é só voltar e escolher seu plano.</p>
+    <a href="/#planos" class="btn btn--gold">Ver planos novamente</a>
+  </div>
+</body>
+</html>
