@@ -78,7 +78,7 @@ nav {
   display: flex; align-items: center; gap: 8px;
 }
 .nav-logo-svg { color: var(--gold); }
-.nav-logo-img { height: 38px; width: auto; display: block; }
+.nav-logo-img { height: 56px; width: auto; display: block; background: #0A0A0A; mix-blend-mode: screen; }
 .nav-right {
   display: flex; align-items: center; gap: 1.75rem;
 }
