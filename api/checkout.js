@@ -26,7 +26,7 @@ const PRICE_MAP = {
 // Trial gratis de 14 dias por plano (ajuste se quiser)
 const TRIAL_DAYS = {
   start: 0,
-  pro:   14,
+  pro:   0,
   elite: 14,
 };
 
