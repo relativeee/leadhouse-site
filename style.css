@@ -1253,36 +1253,48 @@ footer {
 }
 
 /* Support strip */
-.support-strip { padding: 4rem 0 2rem; }
+.support-strip { padding: 3rem 0 1rem; }
 .support-strip__inner {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  background: linear-gradient(135deg, rgba(201,169,97,0.06), rgba(255,255,255,0.025));
-  border: 1px solid rgba(201,169,97,0.2);
-  border-radius: 18px;
-  padding: 1.75rem 2rem;
+  gap: 1.1rem;
+  max-width: 720px;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 1.1rem 1.5rem;
   flex-wrap: wrap;
 }
 .support-strip__icon {
-  width: 56px; height: 56px;
+  width: 38px; height: 38px;
   display: flex; align-items: center; justify-content: center;
-  background: rgba(201,169,97,0.12);
-  border: 1px solid rgba(201,169,97,0.3);
-  border-radius: 14px;
+  background: rgba(201,169,97,0.06);
+  border: 1px solid rgba(201,169,97,0.18);
+  border-radius: 10px;
   color: #c9a961;
   flex-shrink: 0;
 }
-.support-strip__text { flex: 1; min-width: 220px; }
+.support-strip__icon svg { width: 18px; height: 18px; }
+.support-strip__text { flex: 1; min-width: 200px; }
 .support-strip__text h3 {
-  margin: 0 0 0.3rem;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #f3f3f3;
+  margin: 0 0 0.15rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #ddd;
+  letter-spacing: 0.01em;
 }
-.support-strip__text p { margin: 0; color: #999; font-size: 0.92rem; }
-.support-strip__btn { white-space: nowrap; }
+.support-strip__text p { margin: 0; color: #777; font-size: 0.78rem; }
+.support-strip__btn {
+  white-space: nowrap;
+  font-size: 0.78rem !important;
+  padding: 0.55rem 1rem !important;
+  background: transparent;
+  border: 1px solid rgba(201,169,97,0.3) !important;
+  color: #c9a961 !important;
+}
+.support-strip__btn:hover { border-color: rgba(201,169,97,0.55) !important; background: rgba(201,169,97,0.05); }
 @media (max-width: 600px) {
   .support-strip__inner { flex-direction: column; text-align: center; padding: 1.5rem; }
   .support-strip__btn { width: 100%; }
