@@ -338,8 +338,9 @@ section { padding: 6rem 0; }
   transition: border-color 0.25s, box-shadow 0.25s;
 }
 .bento-card:hover {
-  border-color: var(--gold-border);
-  box-shadow: 0 4px 24px rgba(184,151,46,0.06);
+  border-color: rgba(201,168,76,0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(201,168,76,0.15), 0 0 0 1px rgba(201,168,76,0.2);
 }
 .bento-card--wide { grid-column: span 3; }
 
@@ -484,7 +485,13 @@ section { padding: 6rem 0; }
 .price-card {
   background: var(--bg-card); border: 1px solid var(--border);
   border-radius: var(--radius-lg); padding: 2rem;
-  position: relative; transition: border-color 0.25s;
+  position: relative;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.price-card:hover {
+  border-color: rgba(201,168,76,0.45);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 50px rgba(201,168,76,0.18), 0 0 0 1px rgba(201,168,76,0.25);
 }
 .price-card--featured {
   border-color: var(--gold-border);
@@ -770,8 +777,9 @@ footer {
   transition: border-color 0.25s, transform 0.25s;
 }
 .pain-card:hover {
-  border-color: rgba(255,90,82,0.25);
-  transform: translateY(-2px);
+  border-color: rgba(255,90,82,0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(255,90,82,0.12), 0 0 0 1px rgba(255,90,82,0.15);
 }
 .pain-card__icon {
   width: 44px; height: 44px;
@@ -1042,8 +1050,9 @@ footer {
   transition: border-color 0.25s, transform 0.25s;
 }
 .result-card:hover {
-  border-color: var(--gold-border);
-  transform: translateY(-2px);
+  border-color: rgba(201,168,76,0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(201,168,76,0.15), 0 0 0 1px rgba(201,168,76,0.2);
 }
 .result-card__num {
   font-family: var(--font-d);
@@ -1129,8 +1138,9 @@ footer {
   line-height: 1;
 }
 .social-card:hover {
-  border-color: var(--gold-border);
-  transform: translateY(-2px);
+  border-color: rgba(201,168,76,0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(201,168,76,0.15), 0 0 0 1px rgba(201,168,76,0.2);
 }
 .social-card__quote {
   font-size: 14.5px;
