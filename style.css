@@ -1252,6 +1252,42 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
+/* Support strip */
+.support-strip { padding: 4rem 0 2rem; }
+.support-strip__inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, rgba(201,169,97,0.06), rgba(255,255,255,0.025));
+  border: 1px solid rgba(201,169,97,0.2);
+  border-radius: 18px;
+  padding: 1.75rem 2rem;
+  flex-wrap: wrap;
+}
+.support-strip__icon {
+  width: 56px; height: 56px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(201,169,97,0.12);
+  border: 1px solid rgba(201,169,97,0.3);
+  border-radius: 14px;
+  color: #c9a961;
+  flex-shrink: 0;
+}
+.support-strip__text { flex: 1; min-width: 220px; }
+.support-strip__text h3 {
+  margin: 0 0 0.3rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f3f3f3;
+}
+.support-strip__text p { margin: 0; color: #999; font-size: 0.92rem; }
+.support-strip__btn { white-space: nowrap; }
+@media (max-width: 600px) {
+  .support-strip__inner { flex-direction: column; text-align: center; padding: 1.5rem; }
+  .support-strip__btn { width: 100%; }
+}
+
 /* Price card hint */
 .price-card__hint {
   font-size: 0.78rem;
