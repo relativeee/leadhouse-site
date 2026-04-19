@@ -468,12 +468,28 @@
         <a href="#planos">Planos</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="mailto:leadhouse.gestaoimobiliaria@gmail.com">Contato</a>
-        <a href="#">Termos</a>
-        <a href="#">Privacidade</a>
+            <a href="/privacidade.html">Privacidade</a>
       </div>
       <p class="footer-copy">© 2026 LeadHouse · Todos os direitos reservados</p>
     </div>
   </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Aviso de cookies">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+        <div>
+          <strong>Usamos cookies</strong>
+          <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você aceita nossa <a href="/privacidade.html">Política de Privacidade</a>.</p>
+        </div>
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--ghost" onclick="cookieReject()">Recusar</button>
+        <button class="btn btn--gold" onclick="cookieAccept()">Aceitar</button>
+      </div>
+    </div>
+  </div>
 
   <script>
     const obs = new IntersectionObserver((entries) => {
@@ -492,6 +508,23 @@
     function closeMobile() {
       document.getElementById('mobileMenu').classList.remove('open');
       document.getElementById('navMobile').classList.remove('active');
+    }
+
+    // Cookie banner
+    (function(){
+      const banner = document.getElementById('cookieBanner');
+      if (!banner) return;
+      if (!localStorage.getItem('lh_cookie_consent')) {
+        setTimeout(() => banner.classList.add('cookie-banner--show'), 800);
+      }
+    })();
+    function cookieAccept(){
+      localStorage.setItem('lh_cookie_consent', 'accepted');
+      document.getElementById('cookieBanner').classList.remove('cookie-banner--show');
+    }
+    function cookieReject(){
+      localStorage.setItem('lh_cookie_consent', 'rejected');
+      document.getElementById('cookieBanner').classList.remove('cookie-banner--show');
     }
   </script>
 </body>
