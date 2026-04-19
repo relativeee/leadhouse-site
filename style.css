@@ -56,48 +56,12 @@ nav, header, section, footer, .cookie-banner {
   z-index: 1;
 }
 
-.bg-animated__orb {
+.bg-animated__canvas {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(90px);
-  opacity: 0.7;
-  will-change: transform;
-}
-
-.bg-animated__orb--1 {
-  width: 520px;
-  height: 520px;
-  background: radial-gradient(circle, rgba(201,169,97,0.35) 0%, rgba(201,169,97,0) 70%);
-  top: -10%;
-  left: -5%;
-  animation: bg-float-1 22s ease-in-out infinite;
-}
-
-.bg-animated__orb--2 {
-  width: 640px;
-  height: 640px;
-  background: radial-gradient(circle, rgba(120,80,40,0.28) 0%, rgba(120,80,40,0) 70%);
-  top: 30%;
-  right: -8%;
-  animation: bg-float-2 28s ease-in-out infinite;
-}
-
-.bg-animated__orb--3 {
-  width: 420px;
-  height: 420px;
-  background: radial-gradient(circle, rgba(201,169,97,0.22) 0%, rgba(201,169,97,0) 70%);
-  bottom: -5%;
-  left: 25%;
-  animation: bg-float-3 24s ease-in-out infinite;
-}
-
-.bg-animated__orb--4 {
-  width: 380px;
-  height: 380px;
-  background: radial-gradient(circle, rgba(160,110,60,0.18) 0%, rgba(160,110,60,0) 70%);
-  top: 60%;
-  left: 5%;
-  animation: bg-float-1 30s ease-in-out infinite reverse;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
 .bg-animated__grid {
@@ -112,33 +76,12 @@ nav, header, section, footer, .cookie-banner {
   opacity: 0.5;
 }
 
-@keyframes bg-float-1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(80px, 60px) scale(1.08); }
-  66% { transform: translate(-40px, 120px) scale(0.95); }
-}
-
-@keyframes bg-float-2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-100px, 80px) scale(1.12); }
-}
-
-@keyframes bg-float-3 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  40% { transform: translate(60px, -80px) scale(1.1); }
-  70% { transform: translate(-80px, -40px) scale(0.92); }
-}
-
 @media (max-width: 720px) {
-  .bg-animated__orb { filter: blur(60px); opacity: 0.25; }
-  .bg-animated__orb--1, .bg-animated__orb--2, .bg-animated__orb--3, .bg-animated__orb--4 {
-    width: 320px; height: 320px;
-  }
   .bg-animated__grid { background-size: 40px 40px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .bg-animated__orb { animation: none !important; }
+  .bg-animated__canvas { display: none; }
 }
 
 .container { max-width: 1180px; margin: 0 auto; padding: 0 2rem; }
