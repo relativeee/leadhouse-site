@@ -60,7 +60,7 @@ nav, header, section, footer, .cookie-banner {
   position: absolute;
   border-radius: 50%;
   filter: blur(90px);
-  opacity: 0.35;
+  opacity: 0.7;
   will-change: transform;
 }
 
@@ -264,7 +264,7 @@ nav {
   text-align: center;
   padding: 7rem 2rem 4rem;
   position: relative; overflow: hidden;
-  background: var(--bg);
+  background: transparent;
 }
 .hero--split { text-align: left; min-height: auto; padding-top: 8rem; padding-bottom: 6rem; }
 .hero--split .hero-title,
@@ -502,7 +502,7 @@ section { padding: 6rem 0; }
 /* ============================================
    How it works (Steps)
    ============================================ */
-.how-section { background: var(--bg); }
+.how-section { background: transparent; }
 .steps {
   display: flex; align-items: flex-start;
   justify-content: center; gap: 1.5rem;
@@ -575,7 +575,7 @@ section { padding: 6rem 0; }
 /* ============================================
    Pricing
    ============================================ */
-.pricing-section { background: var(--bg); }
+.pricing-section { background: transparent; }
 .pricing-row {
   display: grid; grid-template-columns: repeat(2, 1fr);
   gap: 16px; max-width: 700px; margin: 0 auto;
@@ -1186,7 +1186,7 @@ footer {
    CTA Final
    ============================================ */
 .cta-final {
-  background: var(--bg);
+  background: transparent;
   border-top: 1px solid var(--border);
   padding: 7rem 2rem;
   position: relative; overflow: hidden;
@@ -1219,7 +1219,7 @@ footer {
   font-style: italic;
 }
 
-.social-section { background: var(--bg); }
+.social-section { background: transparent; }
 .social-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 14px;
