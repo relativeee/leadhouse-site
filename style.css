@@ -24,11 +24,14 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
 
 body {
   font-family: var(--font-b);
-  background: var(--bg);
+  background: transparent;
   color: var(--text-1);
   font-weight: 400;
   line-height: 1.6;
@@ -43,9 +46,14 @@ body {
 .bg-animated {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
   overflow: hidden;
   pointer-events: none;
+}
+
+nav, header, section, footer, .cookie-banner {
+  position: relative;
+  z-index: 1;
 }
 
 .bg-animated__orb {
