@@ -803,6 +803,12 @@ footer {
 @media (max-width: 960px) {
   .hero-split { grid-template-columns: 1fr; gap: 3rem; }
   .hero--split { text-align: center; padding-top: 7rem; }
+  /* Forca centering robusto: cada filho do hero-copy vira flex item centralizado */
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .hero--split .hero-title,
   .hero--split .hero-desc { max-width: 600px; margin-left: auto; margin-right: auto; }
   .hero-copy .hero-ctas { justify-content: center; }
