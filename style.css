@@ -956,9 +956,9 @@ footer {
 
 @media (max-width: 960px) {
   .solution-split { grid-template-columns: 1fr; gap: 3rem; }
-  .solution-section .section-head { text-align: center; }
+  .solution-copy { text-align: center; }
   .solution-section .section-desc { margin-left: auto; margin-right: auto; max-width: 380px; }
-  .solution-list { max-width: 360px; margin-left: auto; margin-right: auto; }
+  .solution-list { max-width: 360px; margin-left: auto; margin-right: auto; text-align: left; }
 }
 
 /* ============================================
