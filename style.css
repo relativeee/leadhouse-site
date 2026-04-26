@@ -810,9 +810,16 @@ footer {
     align-items: center;
   }
   .hero--split .hero-title,
-  .hero--split .hero-desc { max-width: 600px; margin-left: auto; margin-right: auto; }
+  .hero--split .hero-desc {
+    max-width: 600px; margin-left: auto; margin-right: auto;
+    text-wrap: balance;
+  }
   .hero-copy .hero-ctas { justify-content: center; }
   .hero-trust { justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .hero-copy .hero-title { font-size: 30px; }
 }
 
 /* ============================================
