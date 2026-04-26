@@ -819,7 +819,10 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .hero-copy .hero-title { font-size: 30px; }
+  .hero-copy .hero-title { font-size: 26px; line-height: 1.15; }
+  .hero-copy .hero-desc { font-size: 15px; }
+  .hero { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .container { padding-left: 1rem; padding-right: 1rem; }
 }
 
 /* ============================================
