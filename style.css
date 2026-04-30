@@ -869,7 +869,7 @@ footer {
 /* ============================================
    Solution section
    ============================================ */
-.solution-section { background: var(--bg-warm); }
+.solution-section { background: rgba(17,17,17,0.5); }
 .solution-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1104,7 +1104,7 @@ footer {
 /* ============================================
    Results section
    ============================================ */
-.results-section { background: var(--bg-warm); }
+.results-section { background: rgba(17,17,17,0.5); }
 .results-grid {
   display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 14px;
