@@ -23,7 +23,7 @@ const PRICE_MAP = {
   elite: process.env.STRIPE_ELITE_PRICE_ID,
 };
 
-// Trial gratis de 14 dias por plano (ajuste se quiser)
+// Trial gratis por plano (configuracao Stripe — diferente do trial de signup)
 const TRIAL_DAYS = {
   start: 0,
   pro:   0,
